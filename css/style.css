@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #ffffff;
+    --text: #181818;
+    --elements: #ffffff;
+    --button-back: #0a58ca;
+    --input: #ffffff;
+    --button-text: #ffffff;
+
+}
+[data-theme="dark"] {
+    --background: #1c1c1e;
+    --text: #fefefe;
+    --elements: #ffffff;
+    --button-back: #ffffff;
+    --button-text: #000000;
+
+}
+
+
+
+  
+  /* button[type=button] {
+      position: absolute;
+      right: 1rem;
+      top: .5rem;
+  } */
+
+  button[type=button].toast-btn {
+      position: static;
+  }
+  .tost-link, .tost-link:hover, .tost-link:active, .tost-link:link, .tost-link:visited {
+      text-decoration: none;
+      color: #ffffff;
+  }
+
+  @media screen and (min-width: 350px) {
+      .modal-body img {
+          max-width: 100%;
+      }
+      
+  }
