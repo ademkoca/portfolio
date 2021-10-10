@@ -59,7 +59,7 @@
               <h4 class="text-white">Contact</h4>
               <ul class="list-unstyled">
                 <li><a href="https://twitter.com/rahatlook" target="_blank" class="text-white">Follow on Twitter</a></li>
-                <li><a href="https://www.linkedin.com/in/ademkoca/" class="text-white">Follow on LinkedIn</a></li>
+                <li><a href="https://www.linkedin.com/in/ademkoca/" target="_blank" class="text-white">Follow on LinkedIn</a></li>
                 <li><a href="mailto:aademkocaa@gmail.com?subject=Job request - YOUR NAME" class="text-white">Email me</a></li>
               </ul>
             </div>
@@ -69,7 +69,8 @@
       <div class="navbar navbar-dark bg-dark shadow-sm">
         <div class="container">
           <a href="#" class="navbar-brand d-flex align-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg> -->
+            <img class="me-3" src="img/laptop.png" alt="Laptop logo" id="main-logo">
             <strong>Adem Koca</strong>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -156,18 +157,24 @@
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
               <div class="card shadow-sm">
-                <img 
-                src="img/weatherapp/desktop.png" 
-                class="featurette-image img-fluid mx-auto" 
-                alt="Weather app screenshot" 
-                width="500" 
-                height="500" 
-                preserveAspectRatio="xMidYMid slice" 
-                focusable="false"
-               >
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  <img
+                  src="img/weatherapp/desktop.png"
+                  class="featurette-image img-fluid mx-auto"
+                  alt="Weather app screenshot"
+                  width="500"
+                  height="500"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                                 >
+                </a>
                <div class="card-body">
                   <p class="card-text">
-                    Fully responsive real-time weather app made with HTML, CSS, JS and <a href="https://www.weatherapi.com/" target="_blank">WeatherAPI</a>
+                    Get 24/7 weather data for your location with this <strong>fully responsive, real-time weather app</strong>.</p>
+                    <p class="card-text"> 
+                      The theme is automatically swithed between <span class="light">light</span> and <span class="dark">dark</span> according the time of the day.</p>
+                    <p class="card-text"> 
+                    <em>Made with HTML, CSS (BS 5), JS and <a href="https://www.weatherapi.com/" target="_blank">WeatherAPI</a></em>
                   </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -191,25 +198,31 @@
                         </button>
                       </a>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card shadow-sm">
-                <img 
-                src="img/countries/desktop.png" 
-                class="featurette-image img-fluid mx-auto" 
-                alt="Countries app" 
-                width="500" 
-                height="500" 
-                preserveAspectRatio="xMidYMid slice" 
-                focusable="false"
-               >
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                  <img
+                  src="img/countries/desktop.png"
+                  class="featurette-image img-fluid mx-auto"
+                  alt="Countries app"
+                  width="500"
+                  height="500"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                                 >
+                </a>
                <div class="card-body">
                   <p class="card-text">
-                    Explore countries from all parts of the world and learn more about them. Made with HTML, CSS, JS and <a href="https://restcountries.com/" target="_blank">REST Countries API</a>
+                    <strong>Explore countries</strong> from all parts of the world and <strong>learn more about them</strong>.</p> 
+                    <p class="card-text"> 
+                      Switch between <span class="light">light</span> and <span class="dark">dark</span> theme to your preference.</p>
+                    <p class="card-text">
+                      <em>Made with HTML, CSS (BS 5), JS and <a href="https://restcountries.com/" target="_blank">REST Countries API</a></em>
                   </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -233,25 +246,31 @@
                         </button>
                       </a>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card shadow-sm">
-                <img 
-                src="img/todo/desktop.png" 
-                class="featurette-image img-fluid mx-auto" 
-                alt="TO-DO app" 
-                width="500" 
-                height="500" 
-                preserveAspectRatio="xMidYMid slice" 
-                focusable="false"
-               >
+                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                  <img
+                  src="img/todo/desktop.png"
+                  class="featurette-image img-fluid mx-auto"
+                  alt="TO-DO app"
+                  width="500"
+                  height="500"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                                 >
+                </a>
                <div class="card-body">
                   <p class="card-text">
-                    Fully responsive TO-DO app for your everyday needs. Made with HTML, CSS (Bootstrap 5) and JS
+                    Stay organized while balancing work and life activities with this <strong>fully responsive TO-DO app</strong>. </p>
+                    <p class="card-text"> 
+                      Switch between <span class="light">light</span> and <span class="dark">dark</span> theme to your preference.</p>
+                    <p class="card-text"> 
+                      <em>Made with HTML, CSS (BS 5) and JS</em>
                   </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -275,7 +294,7 @@
                         </button>
                       </a>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    
                   </div>
                 </div>
               </div>

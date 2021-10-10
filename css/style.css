@@ -43,3 +43,20 @@
       }
       
   }
+
+  #main-logo {
+      width: 30px;
+
+  }
+
+  .light {
+      border: 1px solid black;
+      padding: 0 1rem;
+
+  }
+
+  .dark {
+background-color: #1c1c1e;
+color: #FFFFFF;
+padding: 0 1rem;
+  }
