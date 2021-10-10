@@ -50,13 +50,18 @@
   }
 
   .light {
-      border: 1px solid black;
+      border: 1px solid #212529;
       padding: 0 1rem;
 
   }
 
   .dark {
-background-color: #1c1c1e;
+background-color: #212529;
 color: #FFFFFF;
 padding: 0 1rem;
   }
+
+.rounded-circle {
+    width: 100px;
+    height: auto;
+}
