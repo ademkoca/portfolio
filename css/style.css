@@ -37,7 +37,7 @@
       color: #ffffff;
   }
 
-  @media screen and (min-width: 350px) {
+  @media screen and (min-width: 350px) and (max-width: 768px){
       .modal-body img {
           max-width: 100%;
       }
@@ -76,3 +76,9 @@ padding: 0 1rem;
       width: 100%;
       /* border: 1px solid #212529; */
         }
+    @media screen and (min-width: 768px) {
+
+        .carousel-item img{
+            max-height: 500px !important;
+        }
+    }
