@@ -56,6 +56,7 @@
   .light {
       border: 1px solid #212529;
       padding: 0 1rem;
+      padding-bottom: .2rem;
       border-radius: 5px;
 
   }
@@ -64,6 +65,7 @@
 background-color: #212529;
 color: #FFFFFF;
 padding: 0 1rem;
+padding-bottom: .2rem;
 border-radius: 5px;
   }
 
