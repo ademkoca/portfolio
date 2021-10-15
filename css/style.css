@@ -49,7 +49,17 @@
           margin-top: 20px;
 
       }
+
       
+      
+  }
+
+  @media screen and (max-width: 768px){
+    .card a img {
+        -webkit-filter: grayscale(0%) !important; /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%) !important;
+          
+      }
   }
 
   #main-logo {
@@ -96,9 +106,11 @@ border-radius: 5px;
     }
 
     .list-group-item:before {
-        content: url('../img/logo-black-16x16.png') !important;
+        /* content: url('../img/logo-black-16x16.png') !important; */
+        content: url('/img/check.svg') !important;
         margin-right: 10px;
         top: 10px;
+        
     }
 
     .list-group-item {
