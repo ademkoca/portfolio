@@ -107,7 +107,7 @@ border-radius: 5px;
 
     .list-group-item:before {
         /* content: url('../img/logo-black-16x16.png') !important; */
-        content: url('/img/check.svg') !important;
+        content: url('img/check.svg') !important;
         margin-right: 10px;
         top: 10px;
         
