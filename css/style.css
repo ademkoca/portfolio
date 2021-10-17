@@ -144,7 +144,7 @@ border-radius: 5px;
           
       }
 
-.btn-primary {
+/* .btn-primary {
     background-color: #212529;
     border-color: #212529;
 }
@@ -158,4 +158,8 @@ border-radius: 5px;
 #backToTop {
     color: #212529;
     
+} */
+
+.badge {
+    font-size: .875em !important;
 }

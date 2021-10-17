@@ -5,13 +5,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="img/icon.ico" type="image/x-icon" />
-    <!-- Bootstrap CSS -->
-    <link
+    <!-- Bootstrap CDN -->
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
       crossorigin="anonymous"
-    />
+    /> -->
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -36,6 +36,7 @@
     rel="stylesheet"
   /> -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.1.3-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <style>
       .bd-placeholder-img {
@@ -567,7 +568,7 @@
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <!--first row-->
             <div class="col">
-              <div class="card shadow-sm h-100">
+              <div class="card shadow-sm">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                   <img
                   src="img/weatherapp/desktop-light.png"
@@ -587,7 +588,7 @@
                     Get 24/7 weather data for your location with this <strong>fully responsive, real-time weather app</strong>.</p>
                     <p>
                       <small class="card-text">
-                        The theme is automatically switched between <span class="light">light</span> and <span class="dark">dark</span> according to the time of the day.</small>
+                        The theme is automatically switched between <span class="badge bg-light text-dark">light</span> and <span class="badge bg-dark">dark</span> according to the time of the day.</small>
                     </p>
                     <p class="card-text"> 
                     <em>Made with HTML, CSS (BS 5), JS and <a href="https://www.weatherapi.com/" target="_blank">WeatherAPI</a></em>
@@ -614,13 +615,13 @@
                         </button>
                       </a>
                     </div>
-                    
+                    <small class="text-muted" id="weatherapp-life">9 mins</small>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card shadow-sm h-100">
+              <div class="card shadow-sm">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
                   <img
                   src="img/countries/desktop-dark.png"
@@ -636,8 +637,10 @@
                 <h2 class="mb-4 display-6">Where in the world?</h2>
                   <p class="card-text">
                     <strong>Explore countries</strong> from all parts of the world and <strong>learn more about them</strong>.</p> 
-                    <p class="card-text"> 
-                      Switch between <span class="light">light</span> and <span class="dark">dark</span> theme to your preference.</p>
+                    <p>
+                      <small class="card-text"> 
+                        Switch between <span class="badge bg-light text-dark">light</span> and <span class="badge bg-dark">dark</span> theme to your preference.</small>
+                    </p>
                     <p class="card-text">
                       <em>Made with HTML, CSS (BS 5), JS and <a href="https://restcountries.com/" target="_blank">REST Countries API</a></em>
                   </p>
@@ -663,13 +666,13 @@
                         </button>
                       </a>
                     </div>
-                    
+                    <small class="text-muted" id="countries-life">9 mins</small>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card shadow-sm h-100">
+              <div class="card shadow-sm">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
                   <img
                   src="img/todo/desktop-dark.png"
@@ -685,8 +688,10 @@
                 <h2 class="mb-4 display-6">TO-DO app</h2>
                   <p class="card-text">
                     Stay organized while balancing work and life activities with this <strong>fully responsive TO-DO app</strong>. </p>
-                    <p class="card-text"> 
-                      Switch between <span class="light">light</span> and <span class="dark">dark</span> theme to your preference.</p>
+                    <p>
+                      <small class="card-text"> 
+                        Switch between <span class="badge bg-light text-dark">light</span> and <span class="badge bg-dark">dark</span> theme to your preference.</small>
+                    </p>
                     <p class="card-text"> 
                       <em>Made with HTML, CSS (BS 5) and JS</em>
                   </p>
@@ -712,7 +717,7 @@
                         </button>
                       </a>
                     </div>
-                    
+                    <small class="text-muted" id="todo-life">9 mins</small>
                   </div>
                 </div>
               </div>
@@ -720,7 +725,7 @@
             <!--/first row-->
             <!--second row-->
             <div class="col">
-              <div class="card shadow-sm h-100">
+              <div class="card shadow-sm">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
                   <img
                   src="img/social-dashboard/desktop-dark.png"
@@ -736,8 +741,10 @@
                  <h2 class="mb-4 display-6">Social media dashboard</h2>
                   <p class="card-text">
                     Track your social media accounts' statistics using this <strong>fully responsive social media dashboard</strong>.</p>
-                    <p class="card-text"> 
-                      Switch between <span class="light">light</span> and <span class="dark">dark</span> theme to your preference.</p>
+                    <p>
+                      <small class="card-text"> 
+                        Switch between <span class="badge bg-light text-dark">light</span> and <span class="badge bg-dark">dark</span> theme to your preference.</small>
+                    </p>
                     <p class="card-text"> 
                     <em>Made with HTML, CSS (BS 5) and JS</em>
                   </p>
@@ -763,13 +770,13 @@
                         </button>
                       </a>
                     </div>
-                    
+                    <small class="text-muted" id="social-life">9 mins</small>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card shadow-sm h-100">
+              <div class="card shadow-sm">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
                   <img
                   src="img/register/desktop.png"
@@ -810,13 +817,13 @@
                         </button>
                       </a>
                     </div>
-                    
+                    <small class="text-muted" id="register-life">9 mins</small>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card shadow-sm h-100">
+              <div class="card shadow-sm">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">
                   <img
                   src="img/search-bio/desktop-gallery.png"
@@ -857,7 +864,7 @@
                         </button>
                       </a>
                     </div>
-                    
+                    <small class="text-muted" id="search-life">9 mins</small>
                   </div>
                 </div>
               </div>
@@ -865,7 +872,7 @@
             <!--/second row-->
             <!--third row-->
             <div class="col">
-              <div class="card shadow-sm h-100">
+              <div class="card shadow-sm">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
                   <img
                   src="img/cats/desktop.png"
@@ -907,7 +914,7 @@
                         </button>
                       </a>
                     </div>
-                    
+                    <small class="text-muted" id="cats-life">9 mins</small>
                   </div>
                 </div>
               </div>
@@ -1059,6 +1066,7 @@
       
     
     <script src="js/app.js"></script>
+    <script src="js/moment.js"></script>
     <script>
       window.onload = (event) => {
         let myAlert = document.querySelector(".toast");
@@ -1066,10 +1074,20 @@
         // bsAlert.show();
       };
     </script>
-    <script
+    <script>
+      document.getElementById('weatherapp-life').innerHTML= moment('2021/02/26').startOf('day').fromNow();
+      document.getElementById('countries-life').innerHTML= moment('2021/10/05').startOf('day').fromNow();
+      document.getElementById('todo-life').innerHTML= moment('2021/10/07').startOf('day').fromNow();
+      document.getElementById('social-life').innerHTML= moment('2021/09/22').startOf('day').fromNow();
+      document.getElementById('register-life').innerHTML= moment('2021/09/20').startOf('day').fromNow();
+      document.getElementById('search-life').innerHTML= moment('2021/09/19').startOf('day').fromNow();
+      document.getElementById('cats-life').innerHTML= moment('2021/10/11').startOf('day').fromNow();
+    </script>
+    <!-- <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
     crossorigin="anonymous"
-  ></script>
+  ></script> -->
+  <script src="bootstrap/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
