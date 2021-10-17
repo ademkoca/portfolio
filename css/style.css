@@ -163,3 +163,14 @@ border-radius: 5px;
 .badge {
     font-size: .875em !important;
 }
+
+.bg-gray-900 {
+    background-color: #212529 !important;
+}
+.bg-gray-800 {
+    background-color: #6c757d !important;
+}
+.bg-gray-700 {
+    background-color: #dee2e6 !important;
+    color: #000;
+}
