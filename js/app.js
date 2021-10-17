@@ -1,13 +1,35 @@
-var date_diff_indays = function(date1, date2) {
-    dt1 = new Date(date1);
-    dt2 = new Date(date2);
-    return Math.floor((Date.UTC(dt2.getFullYear(), dt2.getMonth(), dt2.getDate()) - Date.UTC(dt1.getFullYear(), dt1.getMonth(), dt1.getDate()) ) /(1000 * 60 * 60 * 24));
+function fillProgress(id) {
+
+const weatherappProgress = document.getElementById(`${id}`);
+let url = `https://api.github.com/repos/ademkoca/${id}/languages`;
+fetch(url)
+.then(response => response.json())
+.then(data => {
+    console.log(data.JavaScript);
+    console.log(data.HTML);
+    console.log(data.CSS);
+    let total = data.JavaScript+data.HTML+data.CSS;
+    let totalPercent = total/100;
+    console.log(totalPercent);
+    for (let i=0; i<weatherappProgress.children.length; i++){
+weatherappProgress.children[i].setAttribute('aria-valuemax',total);
     }
-    let weatherapp_born=new Date('2021/09/26')
-    let today=new Date('2021/12/31');
-    let todayMonth = ((today.getMonth())+1)%12;
-    let todayDay = ((today.getDate())+1)%30;    
-    let todayYear = today.getFullYear()
-    console.log(todayMonth+"/"+todayDay+"/"+todayYear);
-    console.log(date_diff_indays(weatherapp_born, today));
-    // console.log(date_diff_indays('12/02/2014', '11/04/2014'));
+    weatherappProgress.children[0].setAttribute('aria-valuenow',data.JavaScript);
+    weatherappProgress.children[0].style.width=percentage(data.JavaScript,total)+"%";
+    weatherappProgress.children[1].setAttribute('aria-valuenow',data.HTML);
+    weatherappProgress.children[1].style.width=percentage(data.HTML,total)+"%";
+    weatherappProgress.children[2].setAttribute('aria-valuenow',data.CSS);
+    weatherappProgress.children[2].style.width=percentage(data.CSS,total)+"%";
+});
+
+}
+
+function percentage(partialValue, totalValue) {
+    return (100 * partialValue) / totalValue;
+ } 
+
+ let ids = [`weather-app`,`countries`,`todo`,`social-media-dashboard-with-theme-switch`,`intro-component-with-signup-form`,`search-bio`,`cats`];
+ ids.forEach(element => {
+     fillProgress(element);
+     
+ });
