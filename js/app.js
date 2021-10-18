@@ -5,12 +5,7 @@ let url = `https://api.github.com/repos/ademkoca/${id}/languages`;
 fetch(url)
 .then(response => response.json())
 .then(data => {
-    console.log(data.JavaScript);
-    console.log(data.HTML);
-    console.log(data.CSS);
     let total = data.JavaScript+data.HTML+data.CSS;
-    let totalPercent = total/100;
-    console.log(totalPercent);
     for (let i=0; i<weatherappProgress.children.length; i++){
 weatherappProgress.children[i].setAttribute('aria-valuemax',total);
     }
