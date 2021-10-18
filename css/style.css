@@ -153,3 +153,6 @@ border-radius: 5px;
     color: #000;
 }
 
+.spinner-border {
+    z-index: 9999;
+}
