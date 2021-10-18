@@ -1,7 +1,5 @@
 *{
     box-sizing: border-box;
-    /* font-family: "Nunito Sans", sans-serif; */
-    /* font-family: "Poppins", sans-serif; */
     font-family: 'Quicksand', sans-serif;
 
 }
@@ -27,11 +25,6 @@
 
 
   
-  /* button[type=button] {
-      position: absolute;
-      right: 1rem;
-      top: .5rem;
-  } */
 
   button[type=button].toast-btn {
       position: static;
@@ -144,21 +137,6 @@ border-radius: 5px;
           
       }
 
-/* .btn-primary {
-    background-color: #212529;
-    border-color: #212529;
-}
-
-.btn-primary:hover {
-    background-color: #212529;
-    border-color: #212529;
-    opacity: 0.7;
-}
-
-#backToTop {
-    color: #212529;
-    
-} */
 
 .badge {
     font-size: .875em !important;
@@ -174,3 +152,4 @@ border-radius: 5px;
     background-color: #dee2e6 !important;
     color: #000;
 }
+
