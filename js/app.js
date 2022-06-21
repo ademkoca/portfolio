@@ -23,7 +23,7 @@ function percentage(partialValue, totalValue) {
     return (100 * partialValue) / totalValue;
  } 
 
- let ids = [`weather-app`,`countries`,`todo`,`social-media-dashboard-with-theme-switch`,`intro-component-with-signup-form`,`search-bio`,`cats`];
+ let ids = [`weather-app`,`countries`,`todo`,`social-media-dashboard-with-theme-switch`,`intro-component-with-signup-form`,`search-bio`,`cats`, `spotify`];
  ids.forEach(element => {
      fillProgress(element);
      
