@@ -23,8 +23,38 @@ function percentage(partialValue, totalValue) {
     return (100 * partialValue) / totalValue;
  } 
 
- let ids = [`weather-app`,`countries`,`todo`,`social-media-dashboard-with-theme-switch`,`intro-component-with-signup-form`,`search-bio`,`cats`, `spotify`];
+ let ids = [`weather-app`,`countries`,`todo`,`social-media-dashboard-with-theme-switch`,`intro-component-with-signup-form`,`search-bio`,`cats`];
  ids.forEach(element => {
      fillProgress(element);
      
  });
+
+
+
+
+ function fillProgressSpotify() {
+
+    const Progress = document.getElementById(`spotify`);
+    let url = `https://api.github.com/repos/ademkoca/spotify-clone/languages`;
+    fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        let total = data.SCSS+data.HTML+data.CSS;
+        for (let i=0; i<Progress.children.length; i++){
+            Progress.children[i].setAttribute('aria-valuemax',total);
+        }
+        Progress.children[0].setAttribute('aria-valuenow',data.SCSS);
+        Progress.children[0].style.width=percentage(data.SCSS,total)+"%";
+        Progress.children[1].setAttribute('aria-valuenow',data.HTML);
+        Progress.children[1].style.width=percentage(data.HTML,total)+"%";
+        Progress.children[2].setAttribute('aria-valuenow',data.CSS);
+        Progress.children[2].style.width=percentage(data.CSS,total)+"%";
+    });
+    
+    }
+    
+    function percentage(partialValue, totalValue) {
+        return (100 * partialValue) / totalValue;
+     } 
+
+     fillProgressSpotify();
