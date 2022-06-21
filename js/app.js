@@ -49,7 +49,6 @@ function percentage(partialValue, totalValue) {
         Progress.children[1].style.width=percentage(data.HTML,total)+"%";
         Progress.children[2].setAttribute('aria-valuenow',data.CSS);
         Progress.children[2].style.width=percentage(data.CSS,total)+"%";
-        console.log("updated sucessfully");
     });
     
     }
