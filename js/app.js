@@ -59,6 +59,7 @@ function fillProgressSpotify() {
       Progress.children[2].style.width = percentage(data.CSS, total) + '%';
     });
 }
+
 function fillProgressCrowdfund() {
   const Progress = document.getElementById(`crowdfund`);
   let url = `https://api.github.com/repos/ademkoca/crowdfund/languages`;
@@ -86,3 +87,4 @@ function percentage(partialValue, totalValue) {
 }
 
 fillProgressSpotify();
+fillProgressCrowdfund();
