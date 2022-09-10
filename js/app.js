@@ -60,7 +60,7 @@ function fillProgressSpotify() {
     });
 }
 function fillProgressCrowdfund() {
-  const Progress = document.getElementById(`spotify`);
+  const Progress = document.getElementById(`crowdfund`);
   let url = `https://api.github.com/repos/ademkoca/crowdfund/languages`;
   fetch(url)
     .then((response) => response.json())
