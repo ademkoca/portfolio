@@ -69,16 +69,16 @@ function fillProgressCrowdfund() {
       for (let i = 0; i < Progress.children.length; i++) {
         Progress.children[i].setAttribute('aria-valuemax', total);
       }
-      Progress.children[1].setAttribute('aria-valuenow', data.SCSS);
-      Progress.children[1].style.width = percentage(data.SCSS, total) + '%';
-      Progress.children[3].setAttribute('aria-valuenow', data.HTML);
-      Progress.children[3].style.width = percentage(data.HTML, total) + '%';
       Progress.children[0].setAttribute('aria-valuenow', data.CSS);
       Progress.children[0].style.width = percentage(data.CSS, total) + '%';
+      Progress.children[1].setAttribute('aria-valuenow', data.SCSS);
+      Progress.children[1].style.width = percentage(data.SCSS, total) + '%';
       Progress.children[2].setAttribute('aria-valuenow', data.Javascript);
       Progress.children[2].style.width =
         percentage(data.Javascript, total) + '%';
     });
+  Progress.children[3].setAttribute('aria-valuenow', data.HTML);
+  Progress.children[3].style.width = percentage(data.HTML, total) + '%';
 }
 
 function percentage(partialValue, totalValue) {
