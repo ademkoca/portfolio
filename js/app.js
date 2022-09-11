@@ -66,6 +66,7 @@ function fillProgressCrowdfund() {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
+      console.log(data);
       let total = data.SCSS + data.HTML + data.CSS + data.JavaScript;
       for (let i = 0; i < Progress.children.length; i++) {
         Progress.children[i].setAttribute('aria-valuemax', total);
@@ -76,15 +77,26 @@ function fillProgressCrowdfund() {
       Progress.children[1].style.width = percentage(data.SCSS, total) + '%';
       Progress.children[2].setAttribute('aria-valuenow', data.Javascript);
       Progress.children[2].style.width =
-        percentage(data.Javascript, total) + '%';
+      percentage(data.Javascript, total) + '%';
+      Progress.children[3].setAttribute('aria-valuenow', data.HTML);
+    Progress.children[3].style.width = percentage(data.HTML, total) + '%';
     });
-  Progress.children[3].setAttribute('aria-valuenow', data.HTML);
-  Progress.children[3].style.width = percentage(data.HTML, total) + '%';
 }
 
 function percentage(partialValue, totalValue) {
   return (100 * partialValue) / totalValue;
 }
 
+function getUpdatedDate(){
+  let url = `https://api.github.com/repos/ademkoca/crowdfund/commits`;
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data)
+    }
+    )
+}
+
 fillProgressSpotify();
 fillProgressCrowdfund();
+getUpdatedDate();
